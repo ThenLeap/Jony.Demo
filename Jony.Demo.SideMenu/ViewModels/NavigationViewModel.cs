@@ -37,6 +37,16 @@ public partial class NavigationViewModel : ObservableObject
                     new MenuBarModel { Icon = "\uE72E", Title = "权限管理", Route = "Permissions" },
                     new MenuBarModel { Icon = "\uE81C", Title = "日志管理", Route = "Logs" }
                 ]
+            },
+            new MenuBarModel
+            {
+                Icon = "\uE713", Title = "系统设置2", Route = "Settings", IsExpanded = false,
+                ChildMenuBarModel =
+                [
+                    new MenuBarModel { Icon = "\uE790", Title = "基本设置", Route = "BasicSettings" },
+                    new MenuBarModel { Icon = "\uE72E", Title = "权限管理", Route = "Permissions" },
+                    new MenuBarModel { Icon = "\uE81C", Title = "日志管理", Route = "Logs" }
+                ]
             }
         ];
         LoadPage("Dashboard");
